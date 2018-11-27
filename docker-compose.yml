@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  database:
+    image: mdillon/postgis
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "pyerevan"
+      POSTGRES_USER: "pyerevan"
+      POSTGRES_PASSWORD: "secret"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local

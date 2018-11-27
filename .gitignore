@@ -1,0 +1,21 @@
+# Project related
+__pycache__/
+/venv/
+/log/
+/run/
+.env
+
+
+# Database files
+db.sqlite3
+
+# Static files
+/static/*
+!/static/.gitkeep
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
